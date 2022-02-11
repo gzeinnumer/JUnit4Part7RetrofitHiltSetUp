@@ -3,7 +3,6 @@ package com.gzeinnumer.junit4part7retrofithiltsetup.local
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-//todo 6
 @Entity(tableName = "shopping_items")
 data class ShoppingItem(
     var name: String,

@@ -3,7 +3,6 @@ package com.gzeinnumer.junit4part7retrofithiltsetup.local
 import androidx.lifecycle.LiveData
 import androidx.room.*
 
-//todo 7
 @Dao
 interface ShoppingDao {
 

@@ -2,7 +2,6 @@ package com.gzeinnumer.junit4part7retrofithiltsetup.data.remote.responses
 
 import com.google.gson.annotations.SerializedName
 
-//todo 1
 data class ImageResult(
     val comments: Int,
     val downloads: Int,

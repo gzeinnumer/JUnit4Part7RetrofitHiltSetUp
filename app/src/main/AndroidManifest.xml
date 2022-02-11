@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.gzeinnumer.junit4part7retrofithiltsetup">
 
-<!--todo 5-->
     <application
         android:name=".ShoppingAplication"
         android:allowBackup="true"

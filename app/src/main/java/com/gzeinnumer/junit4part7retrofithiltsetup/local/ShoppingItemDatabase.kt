@@ -5,7 +5,6 @@ import androidx.room.RoomDatabase
 import com.gzeinnumer.junit4part7retrofithiltsetup.local.ShoppingDao
 import com.gzeinnumer.junit4part7retrofithiltsetup.local.ShoppingItem
 
-//todo 8
 @Database(
     entities = [ShoppingItem::class],
     version = 1
