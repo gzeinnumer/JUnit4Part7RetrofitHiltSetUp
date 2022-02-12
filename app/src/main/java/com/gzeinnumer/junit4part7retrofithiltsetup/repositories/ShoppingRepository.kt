@@ -7,7 +7,6 @@ import com.gzeinnumer.junit4part7retrofithiltsetup.local.ShoppingItem
 import com.gzeinnumer.junit4part7retrofithiltsetup.other.Resource
 import retrofit2.Response
 
-//todo 2
 interface ShoppingRepository {
     suspend fun insertShoppingItem(shoppingItem: ShoppingItem)
     suspend fun deleteShoppingItem(shoppingItem: ShoppingItem)

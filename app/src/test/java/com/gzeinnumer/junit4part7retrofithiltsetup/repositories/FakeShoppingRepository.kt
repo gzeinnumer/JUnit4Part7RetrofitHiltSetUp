@@ -6,7 +6,6 @@ import com.gzeinnumer.junit4part7retrofithiltsetup.data.remote.responses.ImageRe
 import com.gzeinnumer.junit4part7retrofithiltsetup.local.ShoppingItem
 import com.gzeinnumer.junit4part7retrofithiltsetup.other.Resource
 
-//todo 4
 class FakeShoppingRepository : ShoppingRepository{
     private val shoppingItems = mutableListOf<ShoppingItem>()
 

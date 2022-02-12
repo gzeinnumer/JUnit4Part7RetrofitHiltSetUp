@@ -10,7 +10,6 @@ import retrofit2.Response
 import java.lang.Exception
 import javax.inject.Inject
 
-//todo 3
 class DefaultShoppingRepository @Inject constructor(
     private val shoppingDao: ShoppingDao,
     private val pixabayAPI: PixabayAPI

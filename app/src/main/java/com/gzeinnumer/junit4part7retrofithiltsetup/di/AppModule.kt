@@ -3,9 +3,12 @@ package com.gzeinnumer.junit4part7retrofithiltsetup.di
 import android.content.Context
 import androidx.room.Room
 import com.gzeinnumer.junit4part7retrofithiltsetup.data.remote.PixabayAPI
+import com.gzeinnumer.junit4part7retrofithiltsetup.local.ShoppingDao
 import com.gzeinnumer.junit4part7retrofithiltsetup.local.ShoppingItemDatabase
 import com.gzeinnumer.junit4part7retrofithiltsetup.other.Constant.BASE_URL
 import com.gzeinnumer.junit4part7retrofithiltsetup.other.Constant.DATABASE_NAME
+import com.gzeinnumer.junit4part7retrofithiltsetup.repositories.DefaultShoppingRepository
+import com.gzeinnumer.junit4part7retrofithiltsetup.repositories.ShoppingRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -41,4 +44,12 @@ object AppModule {
             .build()
             .create(PixabayAPI::class.java);
     }
+
+    //todo 9
+    @Singleton
+    @Provides
+    fun provideDefaultShoppingRepository(
+        dao: ShoppingDao,
+        api: PixabayAPI
+    ) = DefaultShoppingRepository(dao, api) as ShoppingRepository
 }
