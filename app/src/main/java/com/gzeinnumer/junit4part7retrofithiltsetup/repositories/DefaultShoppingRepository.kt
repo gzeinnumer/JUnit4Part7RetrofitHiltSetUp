@@ -3,8 +3,8 @@ package com.gzeinnumer.junit4part7retrofithiltsetup.repositories
 import androidx.lifecycle.LiveData
 import com.gzeinnumer.junit4part7retrofithiltsetup.data.remote.PixabayAPI
 import com.gzeinnumer.junit4part7retrofithiltsetup.data.remote.responses.ImageResponse
-import com.gzeinnumer.junit4part7retrofithiltsetup.local.ShoppingDao
-import com.gzeinnumer.junit4part7retrofithiltsetup.local.ShoppingItem
+import com.gzeinnumer.junit4part7retrofithiltsetup.data.local.ShoppingDao
+import com.gzeinnumer.junit4part7retrofithiltsetup.data.local.ShoppingItem
 import com.gzeinnumer.junit4part7retrofithiltsetup.other.Resource
 import retrofit2.Response
 import java.lang.Exception
@@ -22,11 +22,11 @@ class DefaultShoppingRepository @Inject constructor(
         shoppingDao.deleteShoppingItem(shoppingItem)
     }
 
-    override fun observerAllShoppingItems(): LiveData<List<ShoppingItem>> {
+    override fun observeAllShoppingItems(): LiveData<List<ShoppingItem>> {
         return shoppingDao.observeAllShoppingItems()
     }
 
-    override fun observerTotalPrice(): LiveData<Float> {
+    override fun observeTotalPrice(): LiveData<Float> {
         return shoppingDao.observeTotalPrice()
     }
 

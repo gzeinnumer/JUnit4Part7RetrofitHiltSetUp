@@ -1,6 +1,5 @@
 package com.gzeinnumer.junit4part7retrofithiltsetup.other
 
-//todo 6
 open class Event<out T>(private val content: T) {
 
     var hasBeenHandled = false

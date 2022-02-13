@@ -1,9 +1,9 @@
-package com.gzeinnumer.junit4part7retrofithiltsetup.local
+package com.gzeinnumer.junit4part7retrofithiltsetup.data.local
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
-import com.gzeinnumer.junit4part7retrofithiltsetup.local.ShoppingDao
-import com.gzeinnumer.junit4part7retrofithiltsetup.local.ShoppingItem
+import com.gzeinnumer.junit4part7retrofithiltsetup.data.local.ShoppingDao
+import com.gzeinnumer.junit4part7retrofithiltsetup.data.local.ShoppingItem
 
 @Database(
     entities = [ShoppingItem::class],

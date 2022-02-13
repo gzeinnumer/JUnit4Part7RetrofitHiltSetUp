@@ -1,4 +1,4 @@
-package com.gzeinnumer.junit4part7retrofithiltsetup.local
+package com.gzeinnumer.junit4part7retrofithiltsetup.data.local
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
